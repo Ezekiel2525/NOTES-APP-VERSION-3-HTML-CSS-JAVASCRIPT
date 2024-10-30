@@ -1,0 +1,121 @@
+:root {
+    --lg: linear-gradient(135deg, #66b3ff, #eee);
+    --white: #fff;
+    --red: red;
+    --green: rgb(126, 236, 126);
+    --blue: rgb(150, 150, 212);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    font-size: 68.79%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--lg);
+    padding: 5rem 10rem;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+}
+
+.heading img {
+    width: 100px;
+    height: auto;
+}
+
+.heading h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.createbox {
+    margin: 5rem 0;
+}
+
+.createbox button {
+    display: flex;
+    align-items: center;
+    padding: 1.3rem 1.6rem;
+    background: var(--red);
+    color: var(--white);
+    white-space: nowrap;
+    border: none;
+    outline: none;
+    border-radius: .7rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.createbox button img {
+    width: 25px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 33rem;
+    min-height: 15rem;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: .4rem;
+    margin: 2rem 0;
+    outline: none;
+    font-size: 1.6rem;
+}
+
+.input-box img {
+    position: absolute;
+    width: 20px;
+    height: auto;
+    bottom: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 787px) {
+    .container {
+        padding: 1rem 2rem;
+    }
+
+    .heading img {
+        width: 70px;
+    }
+
+    .heading h1 {
+        font-size: 3rem;
+    }
+
+    .createbox button {
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+    }
+
+
+}
